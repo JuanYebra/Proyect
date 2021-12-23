@@ -13,10 +13,11 @@
 <link rel="icon" type="image/png" sizes="192x192" href="../../public/assets/img/favicons/favicon-192x192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="../../public/assets/img/favicons/apple-touch-icon-180x180.png">
 
-<link rel="stylesheet" href="../../public/assets/js/plugins/datatables/dataTables.bootstrap4.min.css">
+<!--<link rel="stylesheet" href="../../public/assets/js/plugins/datatables/dataTables.bootstrap4.min.css">-->
 
 <link rel="stylesheet" id="css-main" href="../../public/assets/css/codebase.min.css">
 
 <link rel="stylesheet" href="../../public/assets/js/plugins/select2/select2.min.css">
 <link rel="stylesheet" href="../../public/assets/js/plugins/select2/select2-bootstrap.min.css">
 <link rel="stylesheet" href="../../public/assets/css/general.css">
+<link rel="stylesheet" href="../../public/editar.css">

@@ -7,7 +7,7 @@
     <head>
         <?php require_once("../MainHead/MainHead.php");?> 
 
-        <title>Home | Mesa de Partes</title>
+        <title>Levantar ticket</title>
 
     </head>
     <body>
@@ -47,12 +47,30 @@
 
             <!--Contenido -->
             <main id="main-container">
-                <div class="content">
+                <div class="content sep">
                 <article>
                     <h1>Levantar ticket</h1>
                     <h2>Envianos cualquier duda o requerimiento que tengas, lo atenderemos en el menor tiempo posible.</h2><br/><br/>
                 </article>
-                   <p>Bienvenido a dostop access</p>
+                <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Aqui agrega tus comentarios</h3>
+                        </div>
+                            <div class="card-body">
+                            <form action="#">
+                                <div class="mb-3">
+                                    <textarea  class="form-control" rows="4"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div><br/>
+            <div>
+            <button type="button" class="buttonlink" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Enviar ticket</button>
+            </div>
                 </div>
             </main>
             <!-- Contenido -->

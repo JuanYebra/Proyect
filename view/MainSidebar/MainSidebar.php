@@ -30,6 +30,7 @@
 </div>
 
 <div class="content-side content-side-full content-side-user px-10 align-parent">
+    
     <!-- Visible only in mini mode -->
     <div class="sidebar-mini-visible-b align-v animated fadeIn">
         <img class="img-avatar img-avatar32" src="../../public/assets/img/avatars/avatar15.jpg" alt="">
@@ -43,7 +44,7 @@
         </a>
         <ul class="list-inline mt-10">
             <li class="list-inline-item">
-                <a class="link-effect text-dual-primary-dark font-size-xs font-w600 text-uppercase" href="be_pages_generic_profile.html"><?php echo $_SESSION["usu_nom"] ." ". $_SESSION["usu_ape"]?></a>
+                <a class="link-effect text-dual-primary-dark font-size-xs font-w600 text-uppercase" href="*"><?php echo $_SESSION["usu_nom"] ." ". $_SESSION["usu_ape"]?></a>
             </li>
             <li class="list-inline-item">
                 <a class="link-effect text-dual-primary-dark" data-toggle="layout" data-action="sidebar_style_inverse_toggle" href="javascript:void(0)">

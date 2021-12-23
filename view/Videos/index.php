@@ -7,7 +7,14 @@
     <head>
         <?php require_once("../MainHead/MainHead.php");?> 
 
-        <title>Home | Mesa de Partes</title>
+        <title>Videos de ayuda</title>
+        <style>
+   
+      .dark-mode {
+        background-color: #0b2b3a;
+        color: white;
+      }
+    </style>
 
     </head>
     <body>
@@ -49,8 +56,18 @@
             <main id="main-container">
                 <div class="content sep">
                    <p>Bienvenido a dostop access</p>
+                   <button onclick="darkMode()">Darkmode</button>
                 </div>
             </main>
+            
+      
+    
+    <script>
+      function darkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script>
             <!-- Contenido -->
 
         <?php require_once("../MainFooter/MainFooter.php");?> 

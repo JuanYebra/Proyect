@@ -2,6 +2,7 @@
   require_once("../../config/conexion.php"); 
   if(isset($_SESSION["usu_id"])){ 
 ?>
+
 <!doctype html>
 <html lang="en" class="no-focus">
     <head>
@@ -12,25 +13,6 @@
     </head>
     <body>
         <div id="page-container" class="sidebar-o side-scroll page-header-modern main-content-boxedv sidebar-inverse">
-            <!--<aside id="side-overlay">
-                <div id="side-overlay-scroll">
-                    <div class="content-header content-header-fullrow">
-                        <div class="content-header-section align-parent">
-                            <button type="button" class="btn btn-circle btn-dual-secondary align-v-r" data-toggle="layout" data-action="side_overlay_close">
-                                <i class="fa fa-times text-danger"></i>
-                            </button>
-
-                            <div class="content-header-item">
-                                <a class="img-link mr-5" href="be_pages_generic_profile.html">
-                                    <img class="img-avatar img-avatar32" src="../../public/assets/img/avatars/avatar15.jpg" alt="">
-                                </a>
-                                <a class="align-middle link-effect text-primary-dark font-w600" href="be_pages_generic_profile.html">John Smith</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </aside>-->
 
             <nav id="sidebar">
                 <div id="sidebar-scroll">
@@ -48,25 +30,30 @@
 <!------------------------------- Contenido -------------------------->
 <main id="main-container">
                 <div class="content sep">
-                <article>
-            <h1>Departamentos</h1>
-            <h2> Agrega todos los departamentos de tu empresa, después podrás asignarlos a cada empleado.</h2><br/><br/>
-            <button type="button" class="buttonlink" id="btnnuevo" >+ Agregar departamento</button>
-      </article><br/><br/><br/>
+      <article>
+                <h1>Listado de empleados</h1>
+                <h2>Aquí podrás agregar, editar o eliminar a tus empleados.</h2><br/><br/>
+                
+                <button type="button" class="buttonlink" id="btnnuevo">+ Agregar empleado</button>
+            </article><br/><br/><br/>
 
 
 
       <div class="block">
                         <div class="block-content block-content-full">
-                            <table id="departamento_data" class="table table-bordered table-striped table-vcenter js-dataTable-full">
+                            <table id="empleado_data" class="table table-bordered table-striped table-vcenter js-dataTable-full">
                                 <thead>
                                     <tr>
                                         <!--tamaño de la tabla -->
                                         <th class="text-center" style="width: 5%;"></th>
                                         <th class="text-center" style="width: 5%;"></th>
-                                        <th style="width: auto;">Departamento </th>
-                                        <th style="width: auto;">Responsable </th>
-                                        <th class="d-none d-sm-table-cell" style="width: auto;">Usuario </th>
+                                        <th style="width: auto;">no. empleado </th>
+                                        <th style="width: auto;">Nombre </th>
+                                        <th style="width: auto;">apellido paterno </th>
+                                        <th style="width: auto;">apellido materno </th>
+                                        <th style="width: auto;">departamento </th>
+                                        <th class="d-none d-sm-table-cell" style="width: auto;">horario</th>
+
                                         
                                     </tr>
                                 </thead>
@@ -92,23 +79,58 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <input type="hidden" id="dep_id" name="dep_id">
+                            <input type="hidden" id="emp_id" name="emp_id">
                             <div class="form-group row">
-                                <label class="col-12" for="nombre_dep">Departamento</label>
+                                <label class="col-12" for="no_empleado">Numero de empleado</label>
                                 <div class="col-md-12">
-                                    <input type="text" class="form-control" id="nombre_dep" name="nombre_dep" placeholder="" required>
+                                    <input type="text" class="form-control" id="no_empleado" name="no_empleado" placeholder="" required>
                                 </div>
                             </div>
+
                             <div class="form-group row">
-                                <label class="col-12" for="responsable_dep">Responsable</label>
+                                <label class="col-12" for="nombre_emp">Nombre(s)</label>
                                 <div class="col-md-12">
-                                    <input type="text" class="form-control" id="responsable_dep" name="responsable_dep" placeholder="" required>
+                                    <input type="text" class="form-control" id="nombre_emp" name="nombre_emp" placeholder="" required>
                                 </div>
                             </div>
+
                             <div class="form-group row">
-                                <label class="col-12" for="user_dep">Usuario</label>
+                                <label class="col-12" for="ape_pat">Apllido paterno</label>
                                 <div class="col-md-12">
-                                    <input type="text" class="form-control" id="user_dep" name="user_dep" placeholder="" required>
+                                    <input type="text" class="form-control" id="ape_pat" name="ape_pat" placeholder="" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-12" for="ape_mat">Apellido materno</label>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" id="ape_mat" name="ape_mat" placeholder="" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-12" for="departamento">Departamento</label>
+                                <div class="col-md-12">
+                                    <select name="departamento" id="departamento" class="form-control" required>
+                                        <option value="">--Please choose an option--</option>
+                                        <option value="desarrollo">Desarrollo</option>
+                                        <option value="soporte">Soporte</option>
+                                        <option value="finanzas">Finanzas</option>
+                                        <option value="recursos_humanos">Recursos humanos</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-12" for="horario">Horario</label>
+                                <div class="col-md-12">
+                                <select name="horario" id="horario" class="form-control" required>
+                                        <option value="">--Please choose an option--</option>
+                                        <option value="Horario1">Horario1</option>
+                                        <option value="Horario2">Horario2</option>
+                                        <option value="Horario3">Horario3</option>
+                                        <option value="Horario4">Horario4</option>
+                                    </select>
                                 </div>
                             </div>
                             
@@ -131,7 +153,7 @@
 
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
         <script src="../../public/assets/js/plugins/select2/select2.full.min.js"></script>
-        <script type="text/javascript" src="Departamento.js"></script>
+        <script type="text/javascript" src="Empleado.js"></script>
 
     </body>
 </html>

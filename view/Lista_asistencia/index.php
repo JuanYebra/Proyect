@@ -7,7 +7,7 @@
     <head>
         <?php require_once("../MainHead/MainHead.php");?> 
 
-        <title>Home | Mesa de Partes</title>
+        <title>Lista de asistencia</title>
 
     </head>
     <body>
@@ -48,7 +48,16 @@
             <!--Contenido -->
             <main id="main-container">
                 <div class="content sep">
-                   <p>Bienvenido a dostop access</p>
+                <article>
+                        <h1>Listado de asistencia</h1><br/><br/><br/>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        </p>
+                        <p>
+                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
+                    </article>
                 </div>
             </main>
             <!-- Contenido -->

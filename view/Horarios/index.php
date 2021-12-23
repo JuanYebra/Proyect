@@ -13,7 +13,7 @@
     </head>
     <body>
         <div id="page-container" class="sidebar-o side-scroll page-header-modern main-content-boxedv sidebar-inverse">
-            <aside id="side-overlay">
+            <!--<aside id="side-overlay">
                 <div id="side-overlay-scroll">
                     <div class="content-header content-header-fullrow">
                         <div class="content-header-section align-parent">
@@ -31,7 +31,7 @@
                     </div>
                 </div>
 
-            </aside>
+            </aside>-->
 
             <nav id="sidebar">
                 <div id="sidebar-scroll">
@@ -48,7 +48,7 @@
 
             <!--Contenido -->
             <main id="main-container">
-                <div class="content">
+                <div class="content sep">
                     <article>
                         <h1>Horarios</h1>
                         <h2> En esta sección puedes crear horarios para después asignarlos a tus empleados.</h2><br/><br/>
@@ -65,9 +65,9 @@
                                         <!--tamaño de la tabla -->
                                         <th class="text-center" style="width: 5%;"></th>
                                         <th class="text-center" style="width: 5%;"></th>
-                                        <th style="width: auto;">Nombre</th>
-                                        <th style="width: auto;">Dias</th>
-                                        <th class="d-none d-sm-table-cell" style="width: auto;">Horas</th>
+                                        <th style="width: auto;">Nombre </th>
+                                        <th style="width: auto;">Dias </th>
+                                        <th class="d-none d-sm-table-cell" style="width: auto;">Horas </th>
                                         
                                     </tr>
                                 </thead>

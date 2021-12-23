@@ -7,12 +7,13 @@
     <head>
         <?php require_once("../MainHead/MainHead.php");?> 
 
-        <title>Home | Mesa de Partes</title>
+        <title>Configuración de reportes</title>
+        <link rel="stylesheet" href="../../public/editar.css">
 
     </head>
     <body>
         <div id="page-container" class="sidebar-o side-scroll page-header-modern main-content-boxedv sidebar-inverse">
-            <aside id="side-overlay">
+            <!--<aside id="side-overlay">
                 <div id="side-overlay-scroll">
                     <div class="content-header content-header-fullrow">
                         <div class="content-header-section align-parent">
@@ -29,8 +30,7 @@
                         </div>
                     </div>
                 </div>
-
-            </aside>
+            </aside>-->
 
             <nav id="sidebar">
                 <div id="sidebar-scroll">
@@ -48,7 +48,48 @@
             <!--Contenido -->
             <main id="main-container">
                 <div class="content sep">
-                   <p>Bienvenido a dostop access</p>
+                <h1>Configurar reportes automáticos</h1>
+            <h2>Elige cuando quieres recibir de manera automatica los reportes de asistencia</h2><br/><br/>
+            <form>
+              
+                  <legend class="label1">Frecuencia: </legend>
+                  <label class="label1">
+                    <input type="radio" name="diario" value="diario"> Diario
+                  </label>
+                  <label>
+                      <input type="radio" name="semanal" value="semanal"> Semanal
+                  </label>
+                  <label>
+                      <input type="radio" name="quincenal" value="quincenal"> Quincenal
+                  </label>
+              <br/><br/>
+                  <legend>Dia de la semana: </legend>
+                  <label>
+                      <input type="radio" name="lunes" value="lunes">  Lunes
+                  </label>
+                  <label>
+                      <input type="radio" name="martes" value="martes"> Martes
+                  </label>
+                  <label>
+                      <input type="radio" name="miercoles" value="miercoles"> Miercoles
+                  </label>
+                  <label>
+                      <input type="radio" name="jueves" value="jueves"> Jueves
+                  </label>
+                  <label>
+                      <input type="radio" name="viernes" value="viernes"> Viernes
+                  </label>
+                  <label>
+                      <input type="radio" name="sabado" value="sdabado"> Sabado
+                  </label>
+                  <label>
+                      <input type="radio" name="domingo" value="domingo"> Domingo
+                  </label>
+              
+            </form><br/>
+
+            <button type="button" class="buttonlink" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Guardar</button>
+
                 </div>
             </main>
             <!-- Contenido -->
