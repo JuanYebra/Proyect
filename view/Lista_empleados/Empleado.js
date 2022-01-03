@@ -5,13 +5,19 @@ function init(){
         guardaryeditar(e);	
     });
 
-    $('#val-select2').select2();
-
-    $('#cmbproducto').select2();
+   
     
 }
 
 $(document).ready(function(){
+
+    $.post("../../controller/departamento.php?op=select",function(data, status){
+        $('#departamento').html(data);
+    });
+
+    $.post("../../controller/horario.php?op=select",function(data, status){
+        $('#horario').html(data);
+    });
 
     tabla= $('#empleado_data').DataTable({
         "aProcessing": true,//Activamos el procesamiento del datatables

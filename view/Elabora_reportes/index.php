@@ -58,7 +58,6 @@
               </fieldset><br/>
 
                 <div id="personalizado" style="display: none;">
-
                     <div class="block">
                         <div class="block-content block-content-full">
                             <table id="departamento_data" class="table table-bordered table-striped table-vcenter js-dataTable-full" style="width: 100%;">
@@ -81,16 +80,15 @@
                             </table>
                         </div>
                     </div>
-
                 </div>
 
               <fieldset>
                   <legend>Crear en: </legend>
                   <label>
-                      <input type="radio" name="numero" value="1"> Excel
+                      <input type="radio" name="tipo" value="excel"> Excel
                   </label>
                   <label>
-                      <input type="radio" name="numero" value="2"> PDF
+                      <input type="radio" name="tipo" value="pdf"> PDF
                   </label>
               </fieldset>
             </form><br/>

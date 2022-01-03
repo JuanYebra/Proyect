@@ -108,31 +108,45 @@
                                 </div>
                             </div>
 
+                            <!---------------------------------------------------------------------------------->
                             <div class="form-group row">
-                                <label class="col-12" for="departamento">Departamento</label>
+                                <label class="col-12" for="ape_mat">RFC</label>
                                 <div class="col-md-12">
-                                    <select name="departamento" id="departamento" class="form-control" required>
-                                        <option value="">--Please choose an option--</option>
-                                        <option value="desarrollo">Desarrollo</option>
-                                        <option value="soporte">Soporte</option>
-                                        <option value="finanzas">Finanzas</option>
-                                        <option value="recursos_humanos">Recursos humanos</option>
-                                    </select>
+                                    <input type="text" class="form-control" id="ape_mat" name="ape_mat" placeholder="" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-12" for="ape_mat">E-mail</label>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" id="ape_mat" name="ape_mat" placeholder="" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-12" for="ape_mat">E-mail opcional</label>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" id="ape_mat" name="ape_mat" placeholder="" required>
+                                </div>
+                            </div>
+                            <!---------------------------------------------------------------------------------->
+
+                            <div class="form-group row">
+                                <label class="col-12" for="horario">Departamento</label>
+                                <div class="col-md-12"> 
+                               <select name="departamento" id="departamento" class="form-control" required>
+                               </select>
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <label class="col-12" for="horario">Horario</label>
-                                <div class="col-md-12">
-                                <select name="horario" id="horario" class="form-control" required>
-                                        <option value="">--Please choose an option--</option>
-                                        <option value="Horario1">Horario1</option>
-                                        <option value="Horario2">Horario2</option>
-                                        <option value="Horario3">Horario3</option>
-                                        <option value="Horario4">Horario4</option>
-                                    </select>
+                                <div class="col-md-12"> 
+                               <select name="horario" id="horario" class="form-control" required>
+                               </select>
                                 </div>
                             </div>
+
+
+                            
                             
                         </div>
                         <div class="modal-footer">

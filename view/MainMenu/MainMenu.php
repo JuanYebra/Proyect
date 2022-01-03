@@ -46,6 +46,8 @@
                 </svg>  Ayuda
             </p>
             <a href="../Videos/">Videos</a>
+            <a href="../summernote/">summer</a>
+
         </li>
 
     </ul>

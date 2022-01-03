@@ -52,39 +52,46 @@
             <h2>Elige cuando quieres recibir de manera automatica los reportes de asistencia</h2><br/><br/>
             <form>
               
-                  <legend class="label1">Frecuencia: </legend>
-                  <label class="label1">
-                    <input type="radio" name="diario" value="diario"> Diario
+                  <legend>Frecuencia: </legend>
+                  <fieldset>
+
+                  <label >
+                    <input type="radio" name="frecuencia" value="1"> Diario
                   </label>
                   <label>
-                      <input type="radio" name="semanal" value="semanal"> Semanal
+                      <input type="radio" name="frecuencia" value="2"> Semanal
                   </label>
                   <label>
-                      <input type="radio" name="quincenal" value="quincenal"> Quincenal
+                      <input type="radio" name="frecuencia" value="3"> Quincenal
                   </label>
+                  </fieldset>
+
               <br/><br/>
+              <fieldset>
                   <legend>Dia de la semana: </legend>
                   <label>
-                      <input type="radio" name="lunes" value="lunes">  Lunes
+                      <input type="radio" name="dia" value="lunes">  Lunes
                   </label>
                   <label>
-                      <input type="radio" name="martes" value="martes"> Martes
+                      <input type="radio" name="dia" value="martes"> Martes
                   </label>
                   <label>
-                      <input type="radio" name="miercoles" value="miercoles"> Miercoles
+                      <input type="radio" name="dia" value="miercoles"> Miercoles
                   </label>
                   <label>
-                      <input type="radio" name="jueves" value="jueves"> Jueves
+                      <input type="radio" name="dia" value="jueves"> Jueves
                   </label>
                   <label>
-                      <input type="radio" name="viernes" value="viernes"> Viernes
+                      <input type="radio" name="dia" value="viernes"> Viernes
                   </label>
                   <label>
-                      <input type="radio" name="sabado" value="sdabado"> Sabado
+                      <input type="radio" name="dia" value="sdabado"> Sabado
                   </label>
                   <label>
-                      <input type="radio" name="domingo" value="domingo"> Domingo
+                      <input type="radio" name="dia" value="domingo"> Domingo
                   </label>
+              </fieldset>
+
               
             </form><br/>
 

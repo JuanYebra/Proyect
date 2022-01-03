@@ -5,6 +5,18 @@
 
     switch($_GET["op"]){
 
+        case "select":
+            $datos=$menu->get_horario();
+            if(is_array($datos)==true and count($datos)>0){
+                $html="<option>Selecciona un horario</option>";
+                foreach($datos as $row)
+                {
+                    $html.="<option value='".$row['nombre']."'>".$row ['nombre']."</option>";
+                }
+                echo $html;
+            } 
+        break;
+
         case "listar":
             $datos=$menu->get_horario();
             $data= Array();

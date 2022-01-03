@@ -12,26 +12,6 @@
     </head>
     <body>
         <div id="page-container" class="sidebar-o side-scroll page-header-modern main-content-boxedv sidebar-inverse">
-            <aside id="side-overlay">
-                <div id="side-overlay-scroll">
-                    <div class="content-header content-header-fullrow">
-                        <div class="content-header-section align-parent">
-                            <button type="button" class="btn btn-circle btn-dual-secondary align-v-r" data-toggle="layout" data-action="side_overlay_close">
-                                <i class="fa fa-times text-danger"></i>
-                            </button>
-
-                            <div class="content-header-item">
-                                <a class="img-link mr-5" href="be_pages_generic_profile.html">
-                                    <img class="img-avatar img-avatar32" src="../../public/assets/img/avatars/avatar15.jpg" alt="">
-                                </a>
-                                <a class="align-middle link-effect text-primary-dark font-w600" href="be_pages_generic_profile.html">John Smith</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </aside>
-
             <nav id="sidebar">
                 <div id="sidebar-scroll">
                     <div class="sidebar-content">
@@ -51,12 +31,31 @@
                 <article>
                         <h1>Listado de asistencia</h1><br/><br/><br/>
 
-                        <p>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        </p>
-                        <p>
-                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                        </p>
+                        <div class="block">
+                        <div class="block-content block-content-full">
+                            <table id="departamento_data" class="table table-bordered table-striped table-vcenter js-dataTable-full" style="width: 100%;">
+                                <thead>
+                                    <tr>
+                                        <!--tamaño de la tabla -->
+                                        <th></th>
+                                        <th>No. empleado</th>
+                                        <th>Nombre</th>
+                                        <th>Apellido P</th>
+                                        <th>Apellido m</th>
+                                        <th>Departamento</th>
+                                        <th>Horario</th>
+                                        <th>Entrada</th>
+                                        <th>Salida</th>
+
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                     </article>
                 </div>
             </main>
@@ -67,6 +66,9 @@
         </div>
 
         <?php require_once("../MainJs/MainJs.php");?> 
+
+        <script type="text/javascript" src="lista.js"></script>
+
 
     </body>
 </html>

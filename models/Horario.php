@@ -1,5 +1,6 @@
 <?php
     class Menu extends Conectar {
+        
 
 		public function get_horario(){
             $conectar= parent::conexion();

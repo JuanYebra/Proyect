@@ -4,10 +4,6 @@ function init(){
     $("#menu_form").on("submit",function(e){
         guardaryeditar(e);	
     });
-
-    $('#val-select2').select2();
-
-    $('#cmbproducto').select2();
     
 }
 
