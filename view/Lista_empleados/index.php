@@ -108,7 +108,7 @@
                                 </div>
                             </div>
 
-                            <!---------------------------------------------------------------------------------->
+                            <!----------------------------------------------------------------------------------
                             <div class="form-group row">
                                 <label class="col-12" for="ape_mat">RFC</label>
                                 <div class="col-md-12">
@@ -127,7 +127,7 @@
                                     <input type="text" class="form-control" id="ape_mat" name="ape_mat" placeholder="" required>
                                 </div>
                             </div>
-                            <!---------------------------------------------------------------------------------->
+                            --------------------------------------------------------------------------------->
 
                             <div class="form-group row">
                                 <label class="col-12" for="horario">Departamento</label>

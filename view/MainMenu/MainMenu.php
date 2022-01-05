@@ -21,7 +21,13 @@
             <a href="../Dato_empresa/">Datos de la Empresa</a>
             <a href="../Ticket/">Levantar ticket</a>
             <a href="../Departamentos/">Departamentos</a>
-            <a href="../Horarios/">Horarios</a> <br/><br/>
+            <?php if($_SESSION["rol_id"]==1){ ?>
+                <a href="../Horarios/">Horarios</a>
+                <a href="../Usuarios/">Usuarios</a> <br/><br/>
+            <?php } elseif ($_SESSION["rol_id"]==2) { ?>
+                <a href="../Horarios/">Horarios</a> <br/><br/>
+            <?php } ?>
+
 
             <p style="padding-left:15px; font-size:20px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-rolodex" viewBox="0 0 16 16">
                 <path d="M8 9.05a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
@@ -46,8 +52,6 @@
                 </svg>  Ayuda
             </p>
             <a href="../Videos/">Videos</a>
-            <a href="../summernote/">summer</a>
-
         </li>
 
     </ul>

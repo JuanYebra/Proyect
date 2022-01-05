@@ -49,6 +49,7 @@
             <main id="main-container">
                 <div class="content sep">
                    <p>Bienvenido a dostop access</p>
+                   <?php echo $_SESSION["usu_nom"] ." ". $_SESSION["usu_ape"]." ". $_SESSION["rol_id"]?></a>
                 </div>
             </main>
             <!-- Contenido -->
