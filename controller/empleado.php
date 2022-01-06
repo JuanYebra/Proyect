@@ -10,14 +10,14 @@
             $data= Array();
             foreach($datos as $row){
                 $sub_array = array();
-                $sub_array[] = '<button type="button" onClick="editar('.$row["emp_id"].');"  id="'.$row["emp_id"].'" class="btn btn-warning btn-icon"><div><i class="fa fa-edit"></i></div></button>';
-                $sub_array[] = '<button type="button" onClick="eliminar('.$row["emp_id"].');"  id="'.$row["emp_id"].'" class="btn btn-danger btn-icon"><div><i class="fa fa-trash"></i></div></button>';
-                $sub_array[] = $row["no_empleado"];
+               $sub_array[] = $row["no_empleado"];
                 $sub_array[] = $row["nombre_emp"];
                 $sub_array[] = $row["ape_pat"];
                 $sub_array[] = $row["ape_mat"];
                 $sub_array[] = $row["departamento"];
                 $sub_array[] = $row["horario"];
+                $sub_array[] = '<button type="button" onClick="editar('.$row["emp_id"].');"  id="'.$row["emp_id"].'" class="btn btn-warning btn-icon"><div><i class="fa fa-edit"></i></div></button>';
+                $sub_array[] = '<button type="button" onClick="eliminar('.$row["emp_id"].');"  id="'.$row["emp_id"].'" class="btn btn-danger btn-icon"><div><i class="fa fa-trash"></i></div></button>';
 
                 $data[] = $sub_array;
             }

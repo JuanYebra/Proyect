@@ -42,11 +42,12 @@
                                 <thead>
                                     <tr>
                                         <!--tamaño de la tabla -->
-                                        <th class="text-center" style="width: 5%;"></th>
-                                        <th class="text-center" style="width: 5%;"></th>
+                                        
                                         <th style="width: auto;">Departamento </th>
                                         <th style="width: auto;">Responsable </th>
                                         <th class="d-none d-sm-table-cell" style="width: auto;">Usuario </th>
+                                        <th class="text-center" style="width: 5%;"></th>
+                                        <th class="text-center" style="width: 5%;"></th>
                                         
                                     </tr>
                                 </thead>

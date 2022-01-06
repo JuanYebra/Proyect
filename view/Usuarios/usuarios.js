@@ -9,6 +9,11 @@ function init(){
 }
 
 $(document).ready(function(){
+ 
+
+    $.post("../../controller/usuario.php?op=select",function(data, status){
+        $('#rol_id').html(data);
+    });
 
     tabla= $('#usuario_data').DataTable({
         "aProcessing": true,//Activamos el procesamiento del datatables
@@ -75,9 +80,10 @@ function editar(usu_id){
         $('#usu_pass').val(data.usu_pass);
         $('#fech_crea').val(data.fech_crea);
         $('#rol_id').val(data.rol_id);
+        //$('#rol').val(data.nombre_rol);
+
+
         $('#usu_id').val(data.usu_id);
-
-
     }); 
     $("#modalcrud").modal('show');	
 }

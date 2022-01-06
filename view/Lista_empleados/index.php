@@ -45,15 +45,15 @@
                                 <thead>
                                     <tr>
                                         <!--tamaño de la tabla -->
-                                        <th class="text-center" style="width: 5%;"></th>
-                                        <th class="text-center" style="width: 5%;"></th>
+                                        
                                         <th style="width: auto;">no. empleado </th>
                                         <th style="width: auto;">Nombre </th>
                                         <th style="width: auto;">apellido paterno </th>
                                         <th style="width: auto;">apellido materno </th>
                                         <th style="width: auto;">departamento </th>
                                         <th class="d-none d-sm-table-cell" style="width: auto;">horario</th>
-
+                                        <th class="text-center" style="width: 5%;"></th>
+                                        <th class="text-center" style="width: 5%;"></th>
                                         
                                     </tr>
                                 </thead>

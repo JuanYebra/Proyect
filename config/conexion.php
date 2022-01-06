@@ -18,7 +18,7 @@ class Conectar {
 		}
 
 		public function ruta(){
-			return "http://localhost/pweb3/";
+			return "http://localhost/Dostop/";
 		}
 	}
 ?>

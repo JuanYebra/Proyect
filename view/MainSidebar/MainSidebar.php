@@ -1,4 +1,4 @@
-<div class="content-header content-header-fullrow px-15">
+<div class="content-header content-header-fullrow px-15" style="height:120px;">
     <!-- Mini Mode -->
     <div class="content-header-section sidebar-mini-visible-b">
         <!-- Logo -->
@@ -20,8 +20,10 @@
 
         <!-- Logo -->
         <div class="content-header-item" >
-            <p style="font-size:30px; font-weight:600;">Dostop</p>
-                <!--<span class="font-size-xl text-dual-primary-dark" >Dostop</span>-->
+        <img  src="../../public/logo.png" alt="" height="100" width="200">
+
+            <!--<p style="font-size:30px; font-weight:600;">Dostop</p>
+                <span class="font-size-xl text-dual-primary-dark" >Dostop</span>-->
             </a>
         </div>
         <!-- END Logo -->
@@ -43,7 +45,7 @@
         <?php
                 if($_SESSION["rol_id"]==1){
                     ?>
-                    <p style="font-size: 20px; font-weight:600; color: #3AEE03;">Super usuario</p>
+                    <p style="font-size: 20px; font-weight:600; color: #3AEE03;">Administrador</p>
                     <?php
                 }elseif($_SESSION["rol_id"]==2){
                     ?>

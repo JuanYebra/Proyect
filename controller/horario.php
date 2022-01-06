@@ -22,11 +22,12 @@
             $data= Array();
             foreach($datos as $row){
                 $sub_array = array();
-                $sub_array[] = '<button type="button" onClick="editar('.$row["id"].');"  id="'.$row["id"].'" class="btn btn-warning btn-icon"><div><i class="fa fa-edit"></i></div></button>';
-                $sub_array[] = '<button type="button" onClick="eliminar('.$row["id"].');"  id="'.$row["id"].'" class="btn btn-danger btn-icon"><div><i class="fa fa-trash"></i></div></button>';
                 $sub_array[] = $row["nombre"];
                 $sub_array[] = $row["dias"];
                 $sub_array[] = $row["horas"];
+                $sub_array[] = '<button type="button" onClick="editar('.$row["id"].');"  id="'.$row["id"].'" class="btn btn-warning btn-icon"><div><i class="fa fa-edit"></i></div></button>';
+                $sub_array[] = '<button type="button" onClick="eliminar('.$row["id"].');"  id="'.$row["id"].'" class="btn btn-danger btn-icon"><div><i class="fa fa-trash"></i></div></button>';
+                
                $data[] = $sub_array;
             }
         

@@ -38,7 +38,7 @@
                 <article>
                     <h1>Administrador</h1>
                     <h1>Agrega solo a usuarios autorizados</h1>
-                    <h2>En esta sección puedes definir el rol de cada usuario ya sea super usuario o usuario simple</h2>
+                    <h2>En esta sección puedes definir el rol de cada usuario ya sea administrador o usuario simple</h2>
                     <button type="button" class="buttonlink" id="btnnuevo" >+ Agregar usuario</button>
                 </article><br/><br/><br/>                                       
                     <div class="block">
@@ -47,15 +47,16 @@
                                 <thead>
                                     <tr>
                                         <!--tamaño de la tabla -->
-                                        <th class="text-center" style="width: 5%;"></th>
-                                        <th class="text-center" style="width: 5%;"></th>
                                         <th style="width: auto;">Nombre </th>
                                         <th style="width: auto;">Apellido p. </th>
                                         <th style="width: auto;">Apellido m. </th>
                                         <th style="width: auto;">Correo </th>
                                         <th style="width: auto;">Password </th>
                                         <th style="width: auto;">Creación </th>
-                                        <th style="width: auto;">Rol </th>                                        
+                                        <th style="width: auto;">Rol </th>    
+                                        <th class="text-center" style="width: 5%;"></th>
+                                        <th class="text-center" style="width: 5%;"></th>                                    
+                                      
                                     </tr>
                                 </thead>
                             </table>
@@ -65,8 +66,8 @@
             </main>
             <!-- Contenido -->
 
-            <!--modal ingreso -->
-<div id="modalcrud" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <!-------------------modal ingreso ------------->
+    <div id="modalcrud" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                 <form method="post" id="menu_form">
                     <div class="modal-content">
@@ -77,51 +78,58 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <input type="hidden" id="id" name="id">
+                            <input type="hidden" id="usu_id" name="usu_id">
+
                             <div class="form-group row">
-                                <label class="col-12" for="nombre">Nombre</label>
+                                <label class="col-12" for="usu_nom">Nombre(s)</label>
                                 <div class="col-md-12">
-                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="" required>
+                                    <input type="text" class="form-control" id="usu_nom" name="usu_nom" placeholder="" required>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-12" for="dias">Apellido paterno</label>
+                                <label class="col-12" for="usu_ape">Apellido paterno</label>
                                 <div class="col-md-12">
-                                    <input type="text" class="form-control" id="dias" name="dias" placeholder="" required>
+                                    <input type="text" class="form-control" id="usu_ape" name="usu_ape" placeholder="" required>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-12" for="horas">Apellido materno</label>
+                                <label class="col-12" for="usu_ape_mat">Apellido materno</label>
                                 <div class="col-md-12">
-                                    <input type="text" class="form-control" id="horas" name="horas" placeholder="" required>
+                                    <input type="text" class="form-control" id="usu_ape_mat" name="usu_ape_mat" placeholder="" required>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-12" for="horas">Correo</label>
+                                <label class="col-12" for="usu_correo">Correo</label>
                                 <div class="col-md-12">
-                                    <input type="text" class="form-control" id="horas" name="horas" placeholder="" required>
+                                    <input type="text" class="form-control" id="usu_correo" name="usu_correo" placeholder="" required>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-12" for="horas">Contraseña</label>
+                                <label class="col-12" for="usu_pass">Contraseña</label>
                                 <div class="col-md-12">
-                                    <input type="text" class="form-control" id="horas" name="horas" placeholder="" required>
+                                    <input type="text" class="form-control" id="usu_pass" name="usu_pass" placeholder="" required>
                                 </div>
                             </div>
+
                             <div class="form-group row">
-                                <label class="col-12" for="horas">Fecha de creacion</label>
+                                <label class="col-12" for="fech_crea">Fecha de creacion</label>
                                 <div class="col-md-12">
-                                    <input type="text" class="form-control" id="horas" name="horas" placeholder="" required>
+                                    <input type="text" class="form-control" id="fech_crea" name="fech_crea" placeholder="" >
                                 </div>
                             </div>
+
+
+
+
+
                             <div class="form-group row">
-                                <label class="col-12" for="horas">Rol</label>
-                                <div class="col-md-12">
-                                    <input type="text" class="form-control" id="horas" name="horas" placeholder="" required>
-                                </div>
+                                <label class="col-12" for="rol_id">rol</label>
+                                <div class="col-md-12"> 
+                               <select name="rol_id" id="rol_id" class="form-control" >
+                               </select>
                             </div>
-                            
                         </div>
+
                         <div class="modal-footer">
                             <button type="submit" name="action" id="#" value="add" class="btn btn-primary">Guardar</button>
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -130,8 +138,10 @@
                 </form>
                 </div>
             </div>
+    </div>
+    <!---------------------finmodal----------------->
 
-        <?php require_once("../MainFooter/MainFooter.php");?> 
+            <?php require_once("../MainFooter/MainFooter.php");?> 
 
         </div>
 
