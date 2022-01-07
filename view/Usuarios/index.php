@@ -4,15 +4,13 @@
     if($_SESSION["rol_id"]==2){
         header("Location:".Conectar::ruta()."view/Home/");
     }else{
-
-         
 ?>
 <!doctype html>
 <html lang="en" class="no-focus">
     <head>
         <?php require_once("../MainHead/MainHead.php");?> 
 
-        <title>Home</title>
+        <title>Usuarios</title>
 
     </head>
     <body>
@@ -114,13 +112,9 @@
                             <div class="form-group row">
                                 <label class="col-12" for="fech_crea">Fecha de creacion</label>
                                 <div class="col-md-12">
-                                    <input type="text" class="form-control" id="fech_crea" name="fech_crea" placeholder="" >
+                                    <input type="date" class="form-control" id="fech_crea" name="fech_crea" placeholder="" >
                                 </div>
                             </div>
-
-
-
-
 
                             <div class="form-group row">
                                 <label class="col-12" for="rol_id">rol</label>

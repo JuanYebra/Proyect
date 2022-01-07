@@ -31,28 +31,27 @@
                 <div class="content sep">
                 <h1>Elaborar reportes</h1>
             <h2>Genera reportes de asistencia.</h2><br/><br/>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-week" viewBox="0 0 16 16">
-              <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-              <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-            </svg>
-            Elige las fechas en las que quieres generar el reporte.<br/>
-            Puedes generar reportes con un maximo de 31 dias<br/><br/>
-
-                <label for="recipient-name">Desde :</label>
+            <h3>
+                <i class="fa fa-calendar"></i> Elige las fechas en las que quieres generar el reporte.
+            </h3>
+            <h4>
+                Puedes generar reportes con un maximo de 31 dias<br/><br/>
+            </h4>
+                <label class="labels" for="recipient-name">Desde :</label>
         		<input type="date" name="buscar_dep">
             
 
-                <label for="recipient-name"style="padding-left: 30px;">Hasta :</label>
+                <label class="labels" for="recipient-name" style="padding-left: 30px;">Hasta :</label>
         		<input type="date" name="buscar_dep" ><br/><br/>
             
                         
             <form>
               <fieldset>
-                  <legend>Empleados: </legend>
-                  <label>
+                  <h4>Empleados: </h4>
+                  <label class="labels">
                     <input type="radio" name="empleados" value="todos" id="check2" onchange="javascript:closecontent()"> Todos
                   </label>
-                  <label>
+                  <label class="labels">
                       <input type="radio" name="empleados" value="personalizado" id="check" onchange="javascript:showContent()"> Personalizado
                   </label>
               </fieldset><br/>
@@ -83,11 +82,11 @@
                 </div>
 
               <fieldset>
-                  <legend>Crear en: </legend>
-                  <label>
+                  <h4>Crear en: </h4>
+                  <label class="labels">
                       <input type="radio" name="tipo" value="excel"> Excel
                   </label>
-                  <label>
+                  <label class="labels">
                       <input type="radio" name="tipo" value="pdf"> PDF
                   </label>
               </fieldset>

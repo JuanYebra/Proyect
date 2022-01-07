@@ -20,7 +20,7 @@
 
         <!-- Logo -->
         <div class="content-header-item" >
-        <img  src="../../public/logo.png" alt="" height="100" width="200">
+        <img  src="../../public/img/logo.png" alt="" height="100" width="200">
 
             <!--<p style="font-size:30px; font-weight:600;">Dostop</p>
                 <span class="font-size-xl text-dual-primary-dark" >Dostop</span>-->

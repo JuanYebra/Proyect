@@ -50,7 +50,7 @@
                 $sub_array[] = $row["usu_pass"];
                 $sub_array[] = $row["fech_crea"];
                 //$sub_array[] = $row["rol_id"];
-                $sub_array[] = $row["nombre_rol"];
+                $sub_array[] = $row["nombre_rol"];                                                                          //btn-noborder
                 $sub_array[] = '<button type="button" onClick="editar('.$row["usu_id"].');"  id="'.$row["usu_id"].'" class="btn btn-warning btn-icon"><div><i class="fa fa-edit"></i></div></button>';
                 $sub_array[] = '<button type="button" onClick="eliminar('.$row["usu_id"].');"  id="'.$row["usu_id"].'" class="btn btn-danger btn-icon"><div><i class="fa fa-trash"></i></div></button>';
                 

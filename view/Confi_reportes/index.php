@@ -13,24 +13,6 @@
     </head>
     <body>
         <div id="page-container" class="sidebar-o side-scroll page-header-modern main-content-boxedv sidebar-inverse">
-            <!--<aside id="side-overlay">
-                <div id="side-overlay-scroll">
-                    <div class="content-header content-header-fullrow">
-                        <div class="content-header-section align-parent">
-                            <button type="button" class="btn btn-circle btn-dual-secondary align-v-r" data-toggle="layout" data-action="side_overlay_close">
-                                <i class="fa fa-times text-danger"></i>
-                            </button>
-
-                            <div class="content-header-item">
-                                <a class="img-link mr-5" href="be_pages_generic_profile.html">
-                                    <img class="img-avatar img-avatar32" src="../../public/assets/img/avatars/avatar15.jpg" alt="">
-                                </a>
-                                <a class="align-middle link-effect text-primary-dark font-w600" href="be_pages_generic_profile.html">John Smith</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </aside>-->
 
             <nav id="sidebar">
                 <div id="sidebar-scroll">
@@ -52,42 +34,42 @@
             <h2>Elige cuando quieres recibir de manera automatica los reportes de asistencia</h2><br/><br/>
             <form>
               
-                  <legend>Frecuencia: </legend>
-                  <fieldset>
+                  <h4>Frecuencia: </h4>
+                  <fieldset >
 
-                  <label >
+                  <label class="labels">
                     <input type="radio" name="frecuencia" value="1"> Diario
-                  </label>
-                  <label>
+                </label>
+                  <label class="labels">
                       <input type="radio" name="frecuencia" value="2"> Semanal
                   </label>
-                  <label>
+                  <label class="labels">
                       <input type="radio" name="frecuencia" value="3"> Quincenal
                   </label>
                   </fieldset>
 
               <br/><br/>
               <fieldset>
-                  <legend>Dia de la semana: </legend>
-                  <label>
-                      <input type="radio" name="dia" value="lunes">  Lunes
+                  <h4>Dia de la semana: </h4>
+                  <label class="labels">
+                      <input type="radio" name="dia" value="lunes" >  Lunes
                   </label>
-                  <label>
+                  <label class="labels">
                       <input type="radio" name="dia" value="martes"> Martes
                   </label>
-                  <label>
+                  <label class="labels">
                       <input type="radio" name="dia" value="miercoles"> Miercoles
                   </label>
-                  <label>
+                  <label class="labels">
                       <input type="radio" name="dia" value="jueves"> Jueves
                   </label>
-                  <label>
+                  <label class="labels">
                       <input type="radio" name="dia" value="viernes"> Viernes
                   </label>
-                  <label>
+                  <label class="labels">
                       <input type="radio" name="dia" value="sdabado"> Sabado
                   </label>
-                  <label>
+                  <label class="labels">
                       <input type="radio" name="dia" value="domingo"> Domingo
                   </label>
               </fieldset>

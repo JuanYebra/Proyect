@@ -9,7 +9,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="">
 <meta property="og:image" content="">
-<link rel="shortcut icon" href="../../public/assets/img/favicons/favicon.png">
+<link rel="shortcut icon" href="../../public/img/LogoDostopD.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../../public/assets/img/favicons/favicon-192x192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="../../public/assets/img/favicons/apple-touch-icon-180x180.png">
 
