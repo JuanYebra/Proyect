@@ -12,5 +12,13 @@
 <script src="../../public/assets/js/plugins/datatables/jquery.dataTables.min.js"></script>
 <script src="../../public/assets/js/plugins/datatables/dataTables.bootstrap4.min.js"></script>
 
-<!-- Page JS Code -->
+<!--Page JS Code -->
 <script src="../../public/assets/js/pages/be_tables_datatables.js"></script>
+
+
+<!-- tablas con generador pdf-->
+<!-- Page JS Plugins 
+<script src="../../public/new/datatables-net.min.css"></script>
+<script src="../../public/new/datatables.min.js"></script>
+
+<script src="../../public/new/datatables.min.css"></script>-->

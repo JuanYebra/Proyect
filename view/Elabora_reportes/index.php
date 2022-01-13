@@ -6,13 +6,12 @@
 <html lang="en" class="no-focus">
     <head>
         <?php require_once("../MainHead/MainHead.php");?> 
-
-        <title>Elaborar reportes</title>
-
+        <!--<link rel="stylesheet" href="//cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">-->
+        <link rel="stylesheet" href="jquery.dataTables.min.css">
+        <title>Reporte</title>
     </head>
-    <body>
+    <body class="with-side-menu">
         <div id="page-container" class="sidebar-o side-scroll page-header-modern main-content-boxedv sidebar-inverse">
-           
             <nav id="sidebar">
                 <div id="sidebar-scroll">
                     <div class="sidebar-content">
@@ -23,7 +22,6 @@
 
                 </div>
             </nav>
-
             <?php require_once("../MainHeader/MainHeader.php");?> 
 
             <!--Contenido -->
@@ -56,42 +54,42 @@
                   </label>
               </fieldset><br/>
 
-                <div id="personalizado" style="display: none;">
-                    <div class="block">
-                        <div class="block-content block-content-full">
-                            <table id="departamento_data" class="table table-bordered table-striped table-vcenter js-dataTable-full" style="width: 100%;">
-                                <thead>
-                                    <tr>
-                                        <!--tamaño de la tabla -->
-                                        <th></th>
+              <div style="display:none; text-align: center;" id="personalizado">
+              <h2>Vista previa</h2>
+                    <div class="page-content">
+                        <div class="container-fluid">
+
+                            <div class="box-typical box-typical-padding">
+                                <table id="reporte_data" class="table table-bordered table-striped table-vcenter js-dataTable-full" style="width:100%;">
+                                    <thead>
+                                        <tr>
                                         <th>No. empleado</th>
-                                        <th>Nombre</th>
-                                        <th>Apellido P</th>
-                                        <th>Apellido m</th>
-                                        <th>Departamento</th>
-                                        <th>Horario</th>
-                                        
-                                    </tr>
-                                </thead>
-                                <tbody>
+                                                        <th>Nombre</th>
+                                                        <th>Apellido P</th>
+                                                        <th>Apellido m</th>
+                                                        <th>Departamento</th>
+                                                        <th>Horario</th>
+                                        </tr>
+                                    </thead>
+                                    
+                                </table>
 
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                            </div>
+                        </div><!--.container-fluid-->
+                    </div><!--.page-content-->
                 </div>
+                               
+              
 
-              <fieldset>
-                  <h4>Crear en: </h4>
-                  <label class="labels">
-                      <input type="radio" name="tipo" value="excel"> Excel
-                  </label>
-                  <label class="labels">
-                      <input type="radio" name="tipo" value="pdf"> PDF
-                  </label>
-              </fieldset>
+                
             </form><br/>
-            <button type="button" class="buttonlink" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onClick="location.href='reporte.php'" >Generar reporte</button>
+            <h4>Generar reporte en: </h4>
+            <div class="butonflex">
+            <button type="button" class="btn buttonlink btn-rounded buttonrepo" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onClick="location.href='reporteexcel.php'" ><i class=" fa fa-file-excel-o"></i> Excel</button>
+            <button type="button" class="btn buttonlink btn-rounded buttonrepo" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onClick="location.href='reportepdf.php'" ><i class="fa fa-file-pdf-o"></i> PDF</button>
+            </div>
+
+            
 
                 </div>
             </main>
@@ -103,11 +101,10 @@
 
         <?php require_once("../MainJs/MainJs.php");?> 
 
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-        <script src="../../public/assets/js/plugins/select2/select2.full.min.js"></script>
         <script type="text/javascript" src="elabora.js"></script>
 
-        <!------------ script mostrar div---------------->
+
+        <!-- mostrar div-->
         <script type="text/javascript">
             function showContent() {
                 element = document.getElementById("personalizado");
@@ -128,7 +125,9 @@
                 }
                 
             }
-        </script>
+        </script> 
+        <!-- Page JS Plugins -->
+
         <!------------fin script mostrar div---------------->
     </body>
 </html>

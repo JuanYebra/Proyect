@@ -17,6 +17,15 @@ $(document).ready(function(){
         "aProcessing": true,//Activamos el procesamiento del datatables
         "aServerSide": true,//Paginación y filtrado realizados por el servidor
         dom: 'Bfrtip',//Definimos los elementos del control de tabla
+        "searching": true,
+        lengthChange: false,
+        colReorder: true,
+        buttons: [		          
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+                'pdfHtml5'
+                ],
         "ajax":{
         url:"../../controller/departamento.php?op=listar",
         type : "post",					
